@@ -121,8 +121,6 @@
 //    public string MobileNum { get; set; }
 
 //}
-
-
 #endregion
 
 #region Default Constructor 
@@ -219,7 +217,7 @@
 
 #endregion
 
-# region Static Constractor 
+#region Static Constractor 
 ////Static Constractor Can't Call More Than One 
 //Console.WriteLine("This Is Static Constractor   In C# ");
 //Enemy robot = new Enemy();
@@ -273,7 +271,411 @@
 #endregion
 
 #region Extention Method 
- 
+//int x = 60;
+//Console.WriteLine(x.IsGreaterThan(30))  ;
+
+//string text = "500";
+//Console.WriteLine(text.IsNumberOrNot());
+//string statment = "";
+//Console.WriteLine($"The Length Of Stetment Is {statment.Length}");
+//Console.WriteLine(statment.CountOfWords());
 
 
-#endregion 
+//static class ExtentionMethod
+//{
+//    public static bool IsGreaterThan(this int num1, int num2)
+//    {
+//        return num1 > num2;
+//    }
+//    public static bool IsNumberOrNot(this string text)
+//    {
+//        return int.TryParse(text, out int num);
+//    }
+
+//    public static int CountOfWords(this string statment)
+//    {
+//        if (!string.IsNullOrEmpty(statment))
+//        {
+//            string[] subStrings = statment.Split(' ');
+//            return subStrings.Length;
+//        }
+//        else
+//        {
+//            Console.WriteLine("Input Is Null");
+//            return 0;
+//        }
+
+
+//    }
+
+//}
+
+#endregion
+
+#region Example of Extention Method
+//int[] sums = { 2, 3, 5, 6 };
+//int target = 5;
+//Solution s1 = new Solution();
+//s1.TwoSum(sums, target);
+//public class Solution
+//{
+//    public int[] TwoSum(int[] nums, int target)
+//    {
+//        int[] resultArrey = new int[2] ;
+//        for (int i = 0; i < nums.Length; i++)
+//        {
+
+//            if (nums[i] + nums[i + 1] == target)
+//            {
+//                resultArrey[0] = nums[i];
+//                resultArrey[1] = nums[i + 1];
+
+//            }
+//        }
+//        return resultArrey;
+
+//    }
+//}
+//
+//int[] sums = { 2, 3, 5, 6 };
+//int target = 5;
+//Solution.TwoSum(sums, target);
+
+//public class Solution
+//{
+//    public static int[] TwoSum(int[] nums, int target)
+//    {
+//        // Create a dictionary to store number and its index
+//        Dictionary<int, int> numToIndex = new Dictionary<int, int>();
+
+//        for (int i = 0; i < nums.Length; i++)
+//        {
+//            int complement = target - nums[i];
+
+//            // Check if the complement exists in the dictionary
+//            if (numToIndex.ContainsKey(complement))
+//            {
+//                // If found, return the indices
+//                return new int[] { numToIndex[complement], i };
+//            }
+
+//            // Otherwise, add the number and its index to the dictionary
+//            numToIndex[nums[i]] = i;
+//        }
+
+//        // Return an empty array if no solution was found
+//        return new int[] { -1, -1 };
+//    }
+//}
+#endregion
+
+#region Recursive Function 
+//Factorial Function using Non Recursive Way  
+
+//int number = 9 ;
+//Console.WriteLine(FactorialRecursive(number));
+//Console.WriteLine(FactorialOfNumber(number));
+// static int FactorialOfNumber(int number )
+//{
+//    int valueResult = 1;
+//    if (number == 0)
+//        return 1;
+//    for (int i = number; i > 0; i--)
+//    {
+//        valueResult *= i;
+//        Console.WriteLine(i);
+//    }
+
+
+//    return valueResult;
+
+//}
+
+
+//Factorial Function Using Recursive Way 
+
+//static int FactorialRecursive(int number )
+//{
+//    if (number == 0)
+//        return 1;
+//    return number * FactorialRecursive(number - 1);
+//}
+
+//Open Folder
+//string path = string.Empty;
+//path = @"C:\Projects";
+//DisplayFolders(path, 0);
+//static void DisplayFolders(string path , int indent)
+//{
+
+//    foreach (var folder in Directory.GetDirectories(path))
+//    {
+//        Console.WriteLine($"{new string(' ', indent)} {Path.GetFileName(folder)}");
+//        DisplayFolders(folder, indent + 3);
+//    }
+
+//}
+#endregion
+
+#region Inheritance 
+//inheret from class to anther class  oneclass : twoclass 
+#endregion
+
+
+#region Polymorphism 
+
+//Compile Time (Static Type) Overloading                 اكتر من function بنفس الاسم ولكن بتختلف في السيجنتشر 
+
+
+
+// RunTime (Dynamic) Overriding  
+//دي بالضبط زي ان انا بعمل في الكلاس الاول دالة بتعمل حاجة معينة ولكن فيما بعد حبيت اني اذود عليها او اعدلها او اضيف علي نفس الدالة معلومات اكتر 
+//فيما بستدعيها في الكلاسات التانية الي بتكون وارسة من الكلاس الام 
+// بضيف في الام virtual ولكن بضيف في الابناء override 
+//Shape shape1 = new Shape();
+//Shape shape2 = new Circle();
+//Shape shape3 = new Traiangle();
+//Shape shape4 = new Line();
+
+//shape1.Draw();
+//shape2.Draw();
+//shape3.Draw();
+//shape4.Draw();
+
+////ٍShape[] Shapes = new Shape[4];
+////Shapes[0] = new Shape();
+////Shapes[1] = new Circle  ();
+////Shapes[2] = new Traiangle ();
+////Shapes[3] = new Line ();
+
+
+//// انا ممكن ابدل override واخليها new في الحالة دي اكني معملتش حاجة وهتتنفذ من الاب دائما 
+//// مهمة ال new اني اضيع رسالة الخطا 
+//public class Shape
+//{
+//    public virtual void Draw()
+//    {
+//        Console.WriteLine("Basic Shepe Is Created " );
+//    }
+//}
+//public class Circle: Shape 
+//{
+//    public override  void Draw()
+//    {
+//        Console.WriteLine("Cirecle Is Created " );
+//    }
+//}
+//public class Traiangle : Shape  
+//{
+//    public  override void Draw()
+//    {
+//        Console.WriteLine("Traiangle Is Created "   );
+//    }
+//}
+
+//public class Line() : Shape
+//{
+//    public override void Draw()
+//    {
+//        Console.WriteLine("Line Is Created ");
+//    }
+//}
+
+
+
+#endregion
+
+#region Abstraction  فكرة مجردة 
+//abstract class Shape
+//{
+//    abstract public void Draw();
+
+//    public void SayHello()
+//    {
+//        Console.WriteLine("Hello Form the Abstract Class ");
+//    }
+//}
+
+//class Lines : Shape
+//{
+//    public override void Draw()
+//    {
+//            Console.WriteLine("Hello In Abstract Class ");
+//    }
+//}
+
+
+#endregion
+
+#region Sealed Classed 
+//بتمنع اي كلاسس من التوريث 
+//Seadled Classed 
+
+//sealed class Animal
+//{
+//    public string Name { get; set; }
+//}
+
+//class Gog //: Animal
+//{
+//    public string DogBreed { get; set; }
+
+//}
+
+#endregion
+
+#region Static Class 
+// في الكلاس دي لازم عشان اقدر اعرف خصائص لازم تكوم static وكمنا الخصائث نفس النظام 
+
+// وكذالك الكلاس نفس الشي الدوال لازم تكون static 
+// وعشان اخد الداتا بتصل مباشر زي 
+// can't create an instance 
+// By default Is Sealed Can't inherit From it 
+// can't create an constractor 
+// 
+//Console.WriteLine(Campany.GetTotalEmployee());
+
+//Console.WriteLine(TempretureConventer.FehrenheitClesius(90  ));
+//Console.WriteLine(TempretureConventer.ClesiusFehrenheit(30  ));
+
+
+
+//static class Campany
+//{
+//    static public string  CompanyName { get; set; } = string.Empty;
+//    static public string CompanyAdd { get; set; } = string.Empty;
+//     static public  int GetTotalEmployee()
+//    {
+//        return 44444;
+//    }
+//}
+//public static class TempretureConventer
+//{
+//    public static double ClesiusFehrenheit(double fehrenheit)
+//    {
+//        return (fehrenheit * 9 / 5) + 32;
+//    }
+
+//    public static double FehrenheitClesius(double fehrenheit)
+//    {
+//        {
+//            return (fehrenheit - 32) * 5  / 9;
+//        }
+
+//    }
+//}
+
+
+
+
+#endregion
+
+#region partial Classes 
+//using App1;
+//// تقسيم الكلاس الي اكتر من ملف مثال الدوال في ملف مختلف عن الخصائص 
+//// وبكدة انا اقدر ااكسس كل الدوال والخصائص عند ملف program.cs
+//Employee Employee1 = new Employee();
+//Employee1.
+
+#endregion
+
+#region  Convert RomanNumber To ENNumber 
+
+
+
+//string romanNum = "MCDLXXVI";
+//Solution number = new Solution();
+//Console.WriteLine(number.RomanToInt(romanNum));
+//class Solution
+//{
+
+//    public int RomanToInt(string s)
+//    {
+//        int enNumber = 0;
+//        char[] word = s.ToCharArray();
+//        for (int i = 0; i < word.Length; i++)
+//        {
+//            if (word[i] == 'I')
+//                enNumber += 1;
+//            else if (word[i] == 'V')
+//                if (i == 0)
+//                    enNumber += 5;
+//                else
+//                if (word[i - 1] == 'I')
+//                    enNumber += 3;
+//                else
+//                    enNumber += 5;
+//            else if (word[i] == 'X')
+//                if (i == 0)
+//                    enNumber += 10;
+//                else
+//                    if (word[i - 1 ] == 'I')
+//                        enNumber += 8;
+//                    else
+//                        enNumber += 10;
+//            else if (word[i] == 'L')
+//                enNumber += 50;
+//            else if (word[i] == 'C')
+//                if (i == 0)
+//                    enNumber += 100;
+//                else
+//                    if (word[i - 1] == 'X')
+//                    enNumber += 80;
+//                else
+//                    enNumber += 100;
+//            else if (word[i] == 'D')
+//                enNumber += 500;
+//            else if (word[i] == 'M')
+//                if (i == 0)
+//                    enNumber += 1000;
+//                else
+//                    if (word[i - 1] == 'C')
+//                    enNumber += 800;
+//                else
+//                    enNumber += 1000;
+//        }
+
+//        return enNumber;
+
+//    }
+
+//}
+#endregion
+
+#region Nested Class 
+
+using System.Xml.Serialization;
+//dog , and caot by defualt private 
+Animal name1 = new Animal();
+Animal.Dog Dog1 = new Animal.Dog();
+Animal.Caot Caot1 = new Animal.Caot();
+
+
+
+class Animal
+{
+    public string Name { get; set; } = String.Empty;
+
+    public string NameWeight { get; set; }
+
+
+    public Animal()
+    {
+        
+        Caot.GetBour();
+        
+    }
+    public class Dog 
+    {
+        public string Name { get; set; }
+        public void GetName() { }
+    }
+    public class Caot
+    {
+        public int Id { get; set; }
+        public static void GetBour() { }
+    }
+}
+#endregion
+
+//M = 1000, CM = 900, XC = 90 and IV = 4.

@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\",
+  "WorkspaceRootPath": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|c:\\users\\salem\\source\\repos\\csharpcourse\\app1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|c:\\githuprepo\\myfirstproject\\csharpcourse\\app1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|solutionrelative:app1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|c:\\githuprepo\\myfirstproject\\csharpcourse\\app1\\employeemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|solutionrelative:app1\\employeemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|c:\\githuprepo\\myfirstproject\\csharpcourse\\app1\\employeeproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79C27BDA-B111-4CEC-B0FE-04AB145D2DE9}|App1\\App1.csproj|solutionrelative:app1\\employeeproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -30,13 +34,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeMethods.cs",
+              "DocumentMoniker": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\EmployeeMethods.cs",
+              "RelativeDocumentMoniker": "App1\\EmployeeMethods.cs",
+              "ToolTip": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\EmployeeMethods.cs",
+              "RelativeToolTip": "App1\\EmployeeMethods.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T11:04:16.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeProperty.cs",
+              "DocumentMoniker": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\EmployeeProperty.cs",
+              "RelativeDocumentMoniker": "App1\\EmployeeProperty.cs",
+              "ToolTip": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\EmployeeProperty.cs",
+              "RelativeToolTip": "App1\\EmployeeProperty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T11:04:15.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\Program.cs",
+              "DocumentMoniker": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\Program.cs",
               "RelativeDocumentMoniker": "App1\\Program.cs",
-              "ToolTip": "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\Program.cs",
+              "ToolTip": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\Program.cs",
               "RelativeToolTip": "App1\\Program.cs",
-              "ViewState": "AQIAAPoAAAAAAAAAAAAAABYBAAALAAAA",
+              "ViewState": "AQIAAI0CAAAAAAAAAAAAAJsCAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-20T14:32:24.437Z",
               "EditorCaption": ""

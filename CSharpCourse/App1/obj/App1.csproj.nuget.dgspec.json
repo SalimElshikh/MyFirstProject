@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\App1.csproj": {}
+    "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\App1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\App1.csproj": {
+    "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\App1.csproj",
+        "projectUniqueName": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\App1.csproj",
+        "projectPath": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\App1.csproj",
         "packagesPath": "C:\\Users\\Salem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Salem\\source\\repos\\CSharpCourse\\App1\\obj\\",
+        "outputPath": "C:\\GitHupRepo\\MyFirstProject\\CSharpCourse\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Salem\\AppData\\Roaming\\NuGet\\NuGet.Config",
