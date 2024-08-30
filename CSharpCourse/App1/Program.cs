@@ -421,7 +421,6 @@
 //inheret from class to anther class  oneclass : twoclass 
 #endregion
 
-
 #region Polymorphism 
 
 //Compile Time (Static Type) Overloading                 اكتر من function بنفس الاسم ولكن بتختلف في السيجنتشر 
@@ -644,38 +643,203 @@
 
 #region Nested Class 
 
-using System.Xml.Serialization;
-//dog , and caot by defualt private 
-Animal name1 = new Animal();
-Animal.Dog Dog1 = new Animal.Dog();
-Animal.Caot Caot1 = new Animal.Caot();
+//using System.Xml.Serialization;
+////dog , and caot by defualt private 
+//Animal name1 = new Animal();
+//Animal.Dog Dog1 = new Animal.Dog();
+//Animal.Caot Caot1 = new Animal.Caot();
 
 
 
-class Animal
-{
-    public string Name { get; set; } = String.Empty;
+//class Animal
+//{
+//    public string Name { get; set; } = String.Empty;
 
-    public string NameWeight { get; set; }
+//    public string NameWeight { get; set; }
 
 
-    public Animal()
-    {
-        
-        Caot.GetBour();
-        
-    }
-    public class Dog 
-    {
-        public string Name { get; set; }
-        public void GetName() { }
-    }
-    public class Caot
-    {
-        public int Id { get; set; }
-        public static void GetBour() { }
-    }
-}
+//    public Animal()
+//    {
+
+//        Caot.GetBour();
+
+//    }
+//    public class Dog 
+//    {
+//        public string Name { get; set; }
+//        public void GetName() { }
+//    }
+//    public class Caot
+//    {
+//        public int Id { get; set; }
+//        public static void GetBour() { }
+//    }
+//}
 #endregion
 
-//M = 1000, CM = 900, XC = 90 and IV = 4.
+#region One Dimention Array 
+//string[] friends = new string[4];
+
+//var friends = new string[5]
+//{
+//    "salem",
+//    "Osama",
+//    "Ebraheem",
+//    "Elsayed",
+//    "Nour",
+//};
+
+//friends[0] = "slame";
+//friends[1] = "osama";
+//friends[2] = "mahmoud";
+//friends[3] = "ebrahem";
+//friends[4] = "elsayed";
+
+#endregion
+
+#region Multidimetional Array 
+//int[,] soduko =
+//{
+//    {2,3,4,5, 5},
+//    {3,3,4,5,5 },
+//    {2,3,45,6 ,5},
+//};
+
+#endregion
+
+#region Jaged  Array 
+//int[][] sodukoo = new int[][]
+//{
+//    new int[]{2,3,4,5, 5},
+//    new int[] { 3, 3, 4, 5, 5 },
+//    new int[] { 2, 3, 45, 6, 5 },
+//};
+
+#endregion
+
+#region  Endices And Range 
+//var friends = new string[5] { "Salem", "Osama", "Mohmoud", "Nada", "Ebraheam" };
+
+//var slice1 = friends[1..^3];
+//slice1.Print();
+
+
+
+//public static class Extention 
+//{
+//    public static void Print(this string[] Names)
+//    {
+//        Console.Write("{ ");
+//        for(int i = 0; i<Names.Length; i++)
+//        {
+//            Console.Write(Names[i]);
+//            Console.Write(i < Names.Length-1 ? ", " : "");
+//        }
+//        Console.Write(" }");
+//    }
+//}
+#endregion
+
+#region Boudns Checking 
+//Out Of Range 
+#endregion
+
+#region Expression Types And Binary Operatior 
+////Primary Expretion start with type.Member in Type (method Call )
+//var amount = Math.Cos(30)+1;
+////Void Expreion Don't return Value 
+
+//Console.WriteLine("Salem");
+
+//// Assment Statment 
+//int x=0;
+//x = x + 1;
+////Pressedent   الاولويات من الشمال الي اليمين 
+//double z = (2.0 / 3 / 3 / 3);
+//Console.WriteLine($"z = {z}");
+//// الاولويات في || و && و ! من اليمين للشمال 
+
+
+#endregion
+
+#region Null(Coalescing, Conditional)
+
+//// ?? check if string Is Null or Not
+//// If string i snull return default Value  = "Salem"
+//string s1 = null;
+//s1 = s1 ?? "Salem";
+//// if string is null return null with no exeption error else return ToUpper();
+//string s2 = "apc";
+//s2 = s2?.ToUpper();
+//Console.WriteLine(s2);
+
+
+//Console.ReadKey();
+
+#endregion
+
+#region CAsting
+//long nl = 100;
+//int nI = nl;
+// not int to long ,,,, Int32 , int64 
+//Implict Casting 
+//(Type that i want to convert )
+
+// Boxxing convert value type to refferance type 
+//int x = 10;
+//object obj;
+//obj = x;
+//// // Unbxing 
+//int y = (int)obj;
+//// Convert string to int 
+//string val = "120";
+////type.Parse() 
+//int.Parse(val);
+// string number = "200";
+//if(int.TryParse(number , out int s))
+//{
+//    Console.WriteLine($"s = {s}");
+//}
+//else
+//{
+//    Console.WriteLine("Invalid Number format ");
+//}
+
+//Convert.ToInt32(number);
+//var number = 225;
+//var bytes = BitConverter.GetBytes(number);
+//foreach (var b in bytes)
+//{
+//    var binary = Convert.ToString(b, 2).PadLeft(8,'0');
+//    Console.WriteLine(binary);
+//}
+
+// Convert string to hexadecimal 
+//var name = "Salem";
+//char[] chars = name.ToCharArray();
+//foreach (var c in chars)
+//{
+//    var asci = Convert.ToInt32(c);
+//    var asciBinary = Convert.ToString(asci, 2).PadLeft(8, '0');
+//    //var output = $"Asci Code is {asci} , Binary : {asciBinary} , Hexadecimal : {asciBinary}x";
+//    var output = $"Asci Code is {asci} , Binary : {asciBinary} , Hexadecimal : {asci:x}";
+//    Console.WriteLine(output);
+//}
+
+// Convert Hexadicimal to string 
+
+//string[] hexVarlues = {"63","61" ,"6c" ,"65" ,"6d"};
+//foreach (var num in hexVarlues)
+//{
+//    int s = Convert.ToInt32(num,16);
+//    var intString = Char.ConvertFromUtf32(s);
+//    var ch = (char)s;
+
+//    Console.Write(ch);
+//}
+//Convert  form hex,Binary or eny Style NUmber to int 
+//var hex = "1000";
+//int number = Int32.Parse(hex, System.Globalization.NumberStyles.BinaryNumber);
+//Console.WriteLine(number
+//    );
+#endregion
